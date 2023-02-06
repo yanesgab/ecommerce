@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react';
 import styled from '@emotion/styled';
-import { Navbar } from '../Navbar';
+import { Navbar, Footer } from '../';
 
 interface LayoutProps {
   children: JSX.Element | JSX.Element[];
@@ -11,6 +11,7 @@ export const Layout: FunctionComponent<LayoutProps> = ({ children }) => {
     <Container>
       <Navbar />
       {children}
+      <Footer />
     </Container>
   );
 };

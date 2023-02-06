@@ -37,6 +37,7 @@ const Container = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 10px;
+  box-shadow: 1px 0 8px hsl(0deg 0% 47% / 60%) !important;
 `;
 
 const Title = styled.h1`

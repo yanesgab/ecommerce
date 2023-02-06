@@ -26,12 +26,30 @@ export const Home: FunctionComponent = () => {
           </Grid>
           <Grid item xs={12}>
             <TextContainer>
-              <h1>Shop the look</h1>
-              <p>cliqueá tu look fav y llévalo</p>
+              <Title>Shop the look</Title>
+              <Subtitle>cliquea tu look fav y llévalo</Subtitle>
             </TextContainer>
           </Grid>
           <Grid item xs={12}>
             <Image src='https://street47.vtexassets.com/assets/vtex.file-manager-graphql/images/67868f27-7914-419b-9d44-ffb33c58ff40___dfa0027173f8b837ab64a7142ba44290.jpg' />
+          </Grid>
+          <Grid item xs={4}>
+            <TextContainer>
+              <h3>ENVÍO GRATIS</h3>
+              <p>En compras superiores a $18.000</p>
+            </TextContainer>
+          </Grid>
+          <Grid item xs={4}>
+            <TextContainer>
+              <h3>PAGA EN 3 CUOTAS SIN INTERÉS</h3>
+              <p>6 cuotas sin interés a partir de $18.000</p>
+            </TextContainer>
+          </Grid>
+          <Grid item xs={4}>
+            <TextContainer>
+              <h3>CAMBIOS Y DEVOLUCIONES</h3>
+              <p>Primer cambio gratis</p>
+            </TextContainer>
           </Grid>
         </Grid>
       </Container>
@@ -58,4 +76,14 @@ const TextContainer = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+`;
+
+const Title = styled.h2`
+  font-size: 42px;
+  padding-bottom: 10px;
+`;
+
+const Subtitle = styled.h3`
+  font-weight: 400;
+  font-size: 20px;
 `;
